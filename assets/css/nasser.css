@@ -135,3 +135,19 @@
   background-color: #bfbfbf;
   color: #ffffff;
 }
+
+
+body {
+  position: relative;
+  padding-top: 90px;
+  background-color: #fff;
+  background-image: none;
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+}
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=95);
+	opacity: 0.95;
+}
