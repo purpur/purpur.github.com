@@ -330,9 +330,9 @@
   $.fn.datepicker.DatePicker = DatePicker;
 
   $.fn.datepicker.defaults = {
-    monthNames: ["January", "February", "March", "April", "May", "June",
-                 "July", "August", "September", "October", "November", "December"]
-  , shortDayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    monthNames: ["Januar", "Februar", "März", "April", "Mai", "Juni",
+                 "Juli", "August", "September", "Oktober", "November", "Dezember"]
+  , shortDayNames: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"]
   , startOfWeek: 1
   };
 }( window.jQuery || window.ender );
