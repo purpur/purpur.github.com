@@ -105,8 +105,11 @@
           <div class="slider-wrapper theme-default">
               <div class="ribbon"></div>
               <div id="slider" class="nivoSlider">
-                  <img src="http://placehold.it/960x400" alt="" />
                   <img src="../assets/img/slider/1.png" alt="" />
+                  <img src="../assets/img/slider/2.png" alt="" />
+                  <img src="../assets/img/slider/3.png" alt="" />
+                  <img src="../assets/img/slider/4.png" alt="" />
+                  <img src="http://placehold.it/960x400" alt="" />
               </div>
           </div>
         </div>
@@ -120,28 +123,42 @@
             <div class="caption">
               <h5>Thumbnail label</h5>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary">Buchen</a> <a href="#" class="btn">Gallerie</a></p>
+              <p>
+                <a href="#" class="btn btn-primary">Buchen</a> 
+                <a href="../assets/img/slider/1.png" class="btn lightbox1">Gallerie</a>
+                <a class="lightbox1" href="../assets/img/slider/2.png" title=""></a>
+                <a class="lightbox1" href="../assets/img/slider/3.png" title=""></a>
+              </p>
             </div>
           </div>
         </div>
+        
+        
         <div class="span3">
           <div class="thumbnail">
             <img src="http://placehold.it/210x280" alt="">
             <div class="caption">
               <h5>Thumbnail label</h5>
               <p>Cras justo odio, porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary">Buchen</a> <a href="#" class="btn">Gallerie</a></p>
+              <p><a href="#" class="btn btn-primary">Buchen</a> 
+                <a href="../assets/img/slider/3.png" class="btn lightbox2">Gallerie</a>
+                <a class="lightbox2" href="../assets/img/slider/4.png" title=""></a>
+              </p>
             </div>
           </div>
         </div>
+        
+        
         <div class="span3">
           <div class="thumbnail">
-            <a class="lightbox" href="../assets/img/slider/1.png" title=""><img src="http://placehold.it/210x280" alt=""></a>
+            <img src="http://placehold.it/210x280" alt=""></a>
             <div class="caption">
               <h5>Thumbnail label</h5>
               <p>Cras justo odio, porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary">Buchen</a> <a href="#" class="btn">Gallerie</a></p>
-              
+              <p><a href="#" class="btn btn-primary">Buchen</a> 
+                <a href="../assets/img/slider/4.png" class="btn lightbox3">Gallerie</a>
+                <a class="lightbox3" href="../assets/img/slider/2.png" title=""></a>
+              </p>
             </div>
           </div>
         </div>
@@ -205,7 +222,9 @@
     
     <script type="text/javascript">
     $(function() {
-    	$('a.lightbox').lightBox(); // Select all links with lightbox class
+    	$('a.lightbox1').lightBox(); // Select all links with lightbox class
+    	$('a.lightbox2').lightBox(); // Select all links with lightbox class
+    	$('a.lightbox3').lightBox(); // Select all links with lightbox class
     });
     </script>
     

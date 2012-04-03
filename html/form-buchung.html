@@ -15,7 +15,13 @@
       }
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <link href="../assets/css/nivo/nivo-slider.css" type="text/css" media="screen" rel="stylesheet" />
+    <link href="../assets/css/nivo/themes/default/default.css" type="text/css" media="screen" rel="stylesheet" />
+    <link href="../assets/css/jquery.lightbox-0.5.css" rel="stylesheet">
     <link href="../assets/css/nasser.css" rel="stylesheet">
+
+
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -31,25 +37,69 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#"> </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Purpur</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
 
     <div class="container">
+
+      <header class="jumbotron subhead" id="overview">
+        <h1>Purpur</h1>
+        <p class="lead">Dozens of reusable components are built into Bootstrap to provide navigation, alerts, popovers, and much more.</p>
+        <div class="subnav">
+          <ul class="nav nav-pills">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sedcards <b class="caret"></b></a>
+              <ul class="dropdown-menu transparent">
+                <li><a href="#punkt">Alle Ladies</a></li>
+                <li><a href="#punkt">Neue Ladies</a></li>
+                <li><a href="#punkt">Duo Paare</a></li>
+                <li><a href="#punkt">Stadt</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Honorar <b class="caret"></b></a>
+              <ul class="dropdown-menu transparent">
+                <li><a href="#punkt">Preise</a></li>
+                <li><a href="#punkt">Reisekosten</a></li>
+                <li><a href="#punkt">Bezahlung</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Buchung <b class="caret"></b></a>
+              <ul class="dropdown-menu transparent">
+                <li><a href="#punkt">Buchungsformular</a></li>
+                <li><a href="#punkt">Reiseveranstaltungen</a></li>
+                <li><a href="#punkt">Special Events</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Etikette / FAQ <b class="caret"></b></a>
+              <ul class="dropdown-menu transparent">
+                <li><a href="#punkt">Etikette</a></li>
+                <li><a href="#punkt">Ablauf des Dates</a></li>
+                <li><a href="#punkt">Philosophie</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">VIP Club <b class="caret"></b></a>
+              <ul class="dropdown-menu transparent">
+                <li><a href="#punkt">Mitgliedschaft</a></li>
+                <li><a href="#punkt">Exclusive Benefits</a></li>
+                <li><a href="#punkt">Bewerbung</a></li>
+                <li><a href="#punkt">Login</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bewerbung <b class="caret"></b></a>
+              <ul class="dropdown-menu transparent">
+                <li><a href="#punkt">Voraussetzungen</a></li>
+                <li><a href="#punkt">Unser Service</a></li>
+                <li><a href="#punkt">Konditionen</a></li>
+                <li><a href="#punkt">Castingformular</a></li>
+              </ul>
+            </li>
+        </div>
+      </header>
+
+
       <div class="row">
       
         <div class="span3">
@@ -102,7 +152,7 @@
                       </div>
                       <div class="control-group">
                         <label class="control-label">Buchungsdatum</label>
-                        <div class="controls docs-input-sizes">
+                        <div class="controls">
                           <input data-datepicker="datepicker" class="small" type="text" value="01/05/2011" />
                           um
                           <select class="span1">
@@ -203,7 +253,7 @@
                       
                       <div class="control-group">
                         <label class="control-label">Telefon / Mobil</label>
-                        <div class="controls docs-input-sizes">
+                        <div class="controls">
                           <input type="text" class="span2" placeholder=""> Rückrufzeit
                             <select class="span2">
                               <option>Jederzeit</option>
