@@ -1,5 +1,5 @@
 .sedcard_question {
-  font-weight: bold;
+  
 }
 .sedcard_answer {
   color: #888;
@@ -138,12 +138,7 @@
 
 
 body {
-  position: relative;
-  padding-top: 90px;
-  background-color: #fff;
   background-image: none;
-  background-repeat: repeat-x;
-  background-position: 0 40px;
 }
 
 .transparent {
@@ -279,7 +274,6 @@ body {
   background-color: #004099 \9;
 }
 
-
-
-
-
+.button_breit {
+  width: 80px;
+}
