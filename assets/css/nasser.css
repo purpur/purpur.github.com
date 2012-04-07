@@ -199,3 +199,6 @@ textarea:focus {
 
 }
 
+#slider{
+  z-index:-500;
+}

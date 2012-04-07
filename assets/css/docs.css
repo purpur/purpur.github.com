@@ -738,7 +738,7 @@ form.well {
   .subnav {
     position: static;
     top: auto;
-    z-index: auto;
+    z-index: 1020;
     width: auto;
     height: auto;
     background: #333333; /* whole background property since we use a background-image for gradient */

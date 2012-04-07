@@ -29,20 +29,20 @@
 	border:0;
 	padding:0;
 	margin:0;
-	z-index:6;
+	z-index:-60;
 	display:none;
 }
 /* The slices and boxes in the Slider */
 .nivo-slice {
 	display:block;
 	position:absolute;
-	z-index:5;
+	z-index:-50;
 	height:100%;
 }
 .nivo-box {
 	display:block;
 	position:absolute;
-	z-index:5;
+	z-index:-50;
 }
 /* Caption styles */
 .nivo-caption {
@@ -53,7 +53,7 @@
 	color:#fff;
 	opacity:0.8; /* Overridden by captionOpacity setting */
 	width:100%;
-	z-index:8;
+	z-index:-80;
 }
 .nivo-caption p {
 	padding:5px;
@@ -81,7 +81,7 @@
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav a {
 	position:relative;
-	z-index:9;
+	z-index:-90;
 	cursor:pointer;
 }
 .nivo-controlNav a.active {
