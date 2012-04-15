@@ -8,7 +8,7 @@
     <meta name="author" content="Tim Rauch">
 
     <!-- Le styles -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,700,800' rel='stylesheet' type='text/css'>
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
@@ -108,15 +108,12 @@
       <section id="content">
 
       <div class="row">
-      
         <div class="span3">
           <div class="thumbnail">
             <a href="../assets/img/models/Cindy1.jpg" class="lightbox1"><img src="../assets/img/models/cindy_4x6_profil.jpg" alt="" /></a> 
             <a class="lightbox1" href="../assets/img/models/Cindy2.jpg" title=""></a>
             <a class="lightbox1" href="../assets/img/models/Cindy3.jpg" title=""></a>
             <a class="lightbox1" href="../assets/img/models/Cindy4.jpg" title=""></a>
-
-            
             <div class="caption">
               <h3>Cindy</h3>
               <p></p>
@@ -129,6 +126,26 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="span9">
+          <div id="myCarousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="../assets/img/700x320.gif" alt="" />                    
+              </div>
+            </div>
+            <!-- Carousel nav -->
+            <!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a> 
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
+          </div>
+          <h3 style="font-style:italic;">Marshmallow lemon drops pastry apple pie macaroon liquorice gummi bears carrot cake marzipan pie macaroon liquorice gummi bears carrot cake marzipan. Wafer sesame snaps powder dragée dessert marzipan lemon drops. Fruitcake tootsie roll jelly beans tiramisu ice cream fruitcake pudding.</h3>
+          <br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3">
+        &nbsp;
         </div>
         <div class="span4">
           <table class="table">
@@ -256,16 +273,7 @@
         </div>
       </div>
       
-      <div class="row">
-      
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
-        <h3>Biografie</h3>
-        <p>Cupcake ipsum dolor sit amet. Chupa chups sweet I love lollipop soufflé I love bear claw I love. Chupa chups caramels jelly beans.</p>
-        <p>Faworki halvah candy canes lollipop. Sweet carrot cake danish topping bear claw faworki tart. Gummi bears jelly cake ice cream fruitcake biscuit donut jujubes.</p>
-        <p>Pastry I love muffin sweet wypas dessert pudding marzipan. Cotton candy jelly-o soufflé. Dragée chocolate bar marzipan.</p></div>
-
-      </div>      
+    
       
 
       </section>
@@ -294,6 +302,11 @@
     $(function() {
     	$('a.lightbox1').lightBox(); // Select all links with lightbox class
     });
+    
+    
+    $('.carousel').carousel({
+      interval: 5000
+    })
     </script>
 
   </body>

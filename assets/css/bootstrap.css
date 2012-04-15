@@ -344,7 +344,9 @@ h5,
 h6 {
   margin: 0;
   font-family: inherit;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 600;
+
   color: inherit;
   text-rendering: optimizelegibility;
 }
@@ -3858,17 +3860,18 @@ a.thumbnail:hover {
   border-top: 1px solid #e5e5e5;
 }
 .carousel {
+  z-index:-500;
   position: relative;
   margin-bottom: 18px;
   line-height: 1;
 }
 .carousel-inner {
+  z-index:-500;
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 .carousel .item {
-  z-index:-50;
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
