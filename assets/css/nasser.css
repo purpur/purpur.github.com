@@ -202,3 +202,17 @@ textarea:focus {
 #slider{
   z-index:-500;
 }
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.floatleft {
+  float: left;
+  margin-right: 5px;
+}
+
+.previewboxheader1 {
+  font-weight: bold;
+  font-size: 16px;
+}
