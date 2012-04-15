@@ -3868,6 +3868,7 @@ a.thumbnail:hover {
   position: relative;
 }
 .carousel .item {
+  z-index:-50;
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
