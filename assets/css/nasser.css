@@ -204,6 +204,7 @@ textarea:focus {
 }
 
 .dropdown:hover .dropdown-menu {
+  z-index:1000;
   display: block;
 }
 
