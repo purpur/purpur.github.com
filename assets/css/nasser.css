@@ -187,6 +187,11 @@ body {
   color: #fff;
 }
 
+a.purpurlink:link      { color: #CC00CC; }
+a.purpurlink:visited   { color: #CC00CC; }
+a.purpurlink:hover     { color: #888888; }
+a.purpurlink:active    { color: #888888; }
+
 input:focus,
 textarea:focus {
   border-color: rgba(204, 0, 204, 0.8);
