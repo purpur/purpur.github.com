@@ -136,7 +136,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #ffffff;  
 }
 a {
   color: #0088cc;
@@ -458,7 +458,7 @@ dd {
 hr {
   margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
   border-bottom: 1px solid #ffffff;
 }
 strong {
@@ -3551,6 +3551,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  margin-bottom: 20px;
 }
 a.thumbnail:hover {
   border-color: #0088cc;
@@ -3918,11 +3919,12 @@ a.thumbnail:hover {
 }
 .carousel-control {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 15px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;

@@ -141,9 +141,6 @@
 }
 
 
-body {
-  background-image: none;
-}
 
 .transparent {
 	zoom: 1;
@@ -219,6 +216,7 @@ textarea:focus {
 }
 
 .previewboxheader1 {
+  color: #CC00CC;
   font-weight: bold;
   font-size: 16px;
 }
@@ -227,4 +225,9 @@ textarea:focus {
   font-style: italic;
   font-weight: 300;
   color: #888;
+}
+
+.sedcard_model_name{
+  position:relative;
+  top: -0.5em;
 }
