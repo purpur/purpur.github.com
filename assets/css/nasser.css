@@ -229,5 +229,5 @@ textarea:focus {
 
 .sedcard_model_name{
   position:relative;
-  top: -0.5em;
+  padding 10px 0 100px 0;
 }
