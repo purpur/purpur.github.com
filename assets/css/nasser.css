@@ -133,10 +133,10 @@
   color: #bfbfbf;
 }
 .datepicker .today {
-  background-color: #fee9cc;
+  background-color: #bfbfbf;
 }
 .datepicker .selected {
-  background-color: #bfbfbf;
+  background-color: #CC00CC;
   color: #ffffff;
 }
 
@@ -176,7 +176,8 @@
 }
 
 .button_breit {
-  width: 80px;
+  margin-top: 4px;
+  width: 188px;
 }
 
 
@@ -213,6 +214,21 @@ textarea:focus {
 .floatleft {
   float: left;
   margin-right: 5px;
+  padding-left: 10px;
+  
+}
+
+.space_left {
+  padding-left: 10px;
+  
+}
+
+
+.space_right {
+  text-align: justify; 
+  text-justify: newspaper;
+  margin-right: 10px;
+  
 }
 
 .previewboxheader1 {
@@ -231,3 +247,19 @@ textarea:focus {
   position:relative;
   padding 10px 0 100px 0;
 }
+
+img.opacity {
+	opacity: 1;
+	filter: alpha(opacity=100);
+ 	-webkit-transition: opacity 0.2s linear;
+	}	
+ 
+img.opacity:hover {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+ 	-webkit-transition: opacity 0.2s linear;
+	}
+	
+	
+
+

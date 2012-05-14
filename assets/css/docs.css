@@ -10,7 +10,7 @@
 -------------------------------------------------- */
 body {
   position: relative;
-  padding-top: 90px;
+  padding-top: 0px;
   background-color: #fefefe;
   background-repeat: repeat;
   background-position: 0 40px;
@@ -40,6 +40,13 @@ body {
 -------------------------------------------------- */
 section {
   padding-top: 30px;
+  
+  /* Randbreite nach Innen */
+  padding-left: 0px;
+  padding-right: 0px;
+  
+
+  
 }
 
 /* Faded out hr */
@@ -108,7 +115,7 @@ hr.soften {
 /* supporting docs pages */
 .subhead {
   padding-bottom: 0;
-  margin-bottom: 9px;
+  margin-bottom: 0px;
 }
 .subhead h1 {
   font-size: 54px;
@@ -130,9 +137,7 @@ hr.soften {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC00CC', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
   background-image: linear-gradient(top, #CC00CC 0%,#333333 100%); /* W3C */
   border: 0px solid #e5e5e5;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+
 }
 .subnav .nav {
     margin-bottom: 0;
@@ -280,6 +285,7 @@ hr.soften {
   margin-top: 45px;
   padding: 35px 0 35px 0;
   border-top: 1px solid #e5e5e5;
+
 }
 .footer p {
   margin-bottom: 0;
@@ -565,7 +571,7 @@ form.well {
 /* Eaxmples page
 ------------------------- */
 .bootstrap-examples .thumbnail {
-  margin-bottom: 9px;
+  margin-bottom: 0px;
   background-color: #fff;
 }
 

@@ -136,7 +136,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #ffffff;  
+  background-color: #808080;  
 }
 a {
   color: #0088cc;
@@ -166,6 +166,17 @@ a:hover {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
+  box-shadow: 0px 10px 80px -25px #CC00CC;
+  
+  -webkit-border-bottom-right-radius: 40px;
+  -webkit-border-bottom-left-radius: 40px;
+  -moz-border-radius-bottomright: 40px;
+  -moz-border-radius-bottomleft: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  
+  margin-bottom: 50px;
+  
 }
 .span12 {
   width: 940px;
@@ -196,6 +207,9 @@ a:hover {
 }
 .span3 {
   width: 220px;
+}
+.span33 {
+  width: 215px;
 }
 .span2 {
   width: 140px;
@@ -321,7 +335,7 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 9px;
+  margin: 0 0 0px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -2636,7 +2650,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs .dropdown-menu,
 .nav-pills .dropdown-menu {
-  margin-top: 1px;
+  margin-top: 0px;
   border-width: 1px;
 }
 .nav-pills .dropdown-menu {
@@ -3566,7 +3580,7 @@ a.thumbnail:hover {
   margin-right: auto;
 }
 .thumbnail .caption {
-  padding: 3px;
+  padding: 0px;
 }
 .label {
   padding: 1px 4px 2px;
