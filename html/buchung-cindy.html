@@ -126,7 +126,8 @@
         </div>
 
         <div class="span9">
-          <form class="form-horizontal" name="jump1">
+          <form class="form-horizontal" name="booking" action="http://purpurbooking.pagodabox.com/booking.php" method="post">
+            <input type="hidden" value="formtype" name="Buchungsanfrage" />
           
             <fieldset>
                       <legend>Buchung</legend>
@@ -134,7 +135,7 @@
                         <label class="control-label">Model</label>
                         <div class="controls docs-input-sizes">
                           
-                          <select name="myjumpbox" OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value" class="span4">
+                          <select name="model" OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value" class="span4">
                             <option value="buchung.html">–</option>
                              <option selected>Cindy</option>
                              <option value="buchung-valerie.html">Valerie</option>
@@ -144,7 +145,7 @@
                       <div class="control-group">
                         <label class="control-label">Buchungsdauer</label>
                         <div class="controls docs-input-sizes">
-                          <select class="span4">
+                          <select name="duration" class="span4">
                             <option>02 Stunden – 600 €</option>
                             <option>02 Stunden – 600 €</option>
                             <option>03 Stunden – 800 €</option>
@@ -166,14 +167,14 @@
                       <div class="control-group">
                         <label class="control-label">Buchungsdatum</label>
                         <div class="controls">
-                          <input data-datepicker="datepicker" class="small" type="text" value="01/05/2011" />
+                          <input name="date" data-datepicker="datepicker" class="small" type="text" value="" />
 
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Buchungszeit</label>
                         <div class="controls">
-                          <select class="span1 nassolini">
+                          <select name="start_time_hours" class="span1 nassolini">
                             <option>00</option>
                             <option>01</option>
                             <option>02</option>
@@ -200,7 +201,7 @@
                             <option>23</option>
                           </select>
                           :
-                          <select class="span1 nassolini">
+                          <select name="start_time_minutes" class="span1 nassolini">
                             <option>00</option>
                             <option>15</option>
                             <option>30</option>
@@ -213,13 +214,13 @@
                       <div class="control-group">
                         <label class="control-label">Treffpunkt</label>
                         <div class="controls docs-input-sizes">
-                          <textarea class="input-xlarge" id="textarea" rows="3" placeholder="Anschrift Hotel, Zimmernummer, etc."></textarea>
+                          <textarea name="location" class="input-xlarge" id="textarea" rows="3" placeholder="Anschrift Hotel, Zimmernummer, etc."></textarea>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Escort Outfit</label>
                         <div class="controls docs-input-sizes">
-                          <select class="span4">
+                          <select name="outfit" class="span4">
                             <option>Business (Hosenanzug, Blazer, Rock,…)</option>
                             <option>Elegant (Kleid, langer Rock)</option>
                             <option>Sexy (Minirock)</option>
@@ -231,33 +232,33 @@
                       <div class="control-group">
                         <label class="control-label">Geplantes Abenteuer</label>
                         <div class="controls docs-input-sizes">
-                          <textarea class="input-xlarge" id="textarea" rows="3" placeholder="Wie stellen Sie sich Ihr Date vor?"></textarea>
+                          <textarea name="adventure" class="input-xlarge" id="textarea" rows="3" placeholder="Wie stellen Sie sich Ihr Date vor?"></textarea>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Erotische Vorlieben</label>
                         <div class="controls docs-input-sizes">
-                          <textarea class="input-xlarge" id="textarea" rows="3" placeholder="Welche Vorlieben möchten Sie gerne ausleben?"></textarea>
+                          <textarea name="preferences" class="input-xlarge" id="textarea" rows="3" placeholder="Welche Vorlieben möchten Sie gerne ausleben?"></textarea>
                         </div>
                       </div>
                       
                       <div class="control-group">
                         <label class="control-label">Vorname</label>
                         <div class="controls docs-input-sizes">
-                          <input type="text" class="span3" placeholder="">
+                          <input name="first_name" type="text" class="span3" placeholder="">
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Nachname</label>
                         <div class="controls docs-input-sizes">
-                          <input type="text" class="span3" placeholder="">
+                          <input name="last_name" type="text" class="span3" placeholder="">
                         </div>
                       </div>
 
                       <div class="control-group">
                         <label class="control-label">Kontaktaufnahme per</label>
                         <div class="controls docs-input-sizes">
-                          <select class="span4">
+                          <select name="contact_by" class="span4">
                             <option>E-Mail</option>
                             <option>Telefon</option>
                           </select>
@@ -266,20 +267,20 @@
                       <div class="control-group">
                         <label class="control-label">E-Mail</label>
                         <div class="controls docs-input-sizes">
-                          <input type="text" class="span3" placeholder="">
+                          <input name="email" type="text" class="span3" placeholder="">
                         </div>
                       </div>
                       
                       <div class="control-group">
                         <label class="control-label">Telefon / Mobil</label>
                         <div class="controls">
-                          <input type="text" class="span4" placeholder=""> 
+                          <input name="phone" type="text" class="span4" placeholder=""> 
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Rückrufzeit</label>
                         <div class="controls">
-                            <select class="span2">
+                            <select name="callback_time" class="span2">
                               <option>Jederzeit</option>
                               <option>10:00 – 12:00 Uhr</option>
                               <option>12:00 – 14:00 Uhr</option>
@@ -294,7 +295,7 @@
                       <div class="control-group">
                         <label class="control-label">Wie haben Sie uns gefunden?</label>
                         <div class="controls docs-input-sizes">
-                          <input type="text" class="span3" placeholder="">
+                          <input name="refferal" type="text" class="span3" placeholder="">
                         </div>
                       </div>
                       
@@ -302,7 +303,7 @@
                         <label class="control-label" for="optionsCheckboxList">Newsletter</label>
                           <div class="controls">
                             <label class="checkbox">
-                              <input type="checkbox" name="optionsCheckboxList1" value="option1">bestellen. Kündigungslink in jeder E-Mail.
+                              <input name="newsletter" type="checkbox" name="optionsCheckboxList1" value="option1">bestellen. Kündigungslink in jeder E-Mail.
                             </label>
                           </div>
                         </div>
@@ -311,7 +312,7 @@
                           
                             <div class="controls">
                               <label class="checkbox">
-                                <input type="checkbox" name="optionsCheckboxList1" value="option1">gelesen und akzeptiert.
+                                <input name="terms" type="checkbox" name="optionsCheckboxList1" value="option1">gelesen und akzeptiert.
                               </label>
                             </div>
                           </div>
