@@ -34,6 +34,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+
   </head>
 
   <body>
@@ -126,13 +128,13 @@
         </div>
 
         <div class="span9">
-          <form class="form-horizontal" name="booking" action="http://purpurbooking.pagodabox.com/booking.php" method="post">
+          <form class="form-horizontal booking" id="booking" name="booking" action="" method="post">
             <input type="hidden" value="formtype" name="Buchungsanfrage" />
           
             <fieldset>
                       <legend>Buchung</legend>
                       <div class="control-group">
-                        <label class="control-label">Model</label>
+                        <label class="control-label">Model *</label>
                         <div class="controls docs-input-sizes">
                           
                           <select name="model" OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value" class="span4">
@@ -143,7 +145,7 @@
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Buchungsdauer</label>
+                        <label class="control-label">Buchungsdauer *</label>
                         <div class="controls docs-input-sizes">
                           <select name="duration" class="span4">
                             <option>02 Stunden – 600 €</option>
@@ -165,14 +167,14 @@
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Buchungsdatum</label>
+                        <label class="control-label">Buchungsdatum *</label>
                         <div class="controls">
                           <input name="date" data-datepicker="datepicker" class="small" type="text" value="" />
 
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Buchungszeit</label>
+                        <label class="control-label">Buchungszeit *</label>
                         <div class="controls">
                           <select name="start_time_hours" class="span1 nassolini">
                             <option>00</option>
@@ -212,15 +214,16 @@
                       </div>
                       
                       <div class="control-group">
-                        <label class="control-label">Treffpunkt</label>
+                        <label class="control-label">Treffpunkt *</label>
                         <div class="controls docs-input-sizes">
                           <textarea name="location" class="input-xlarge" id="textarea" rows="3" placeholder="Anschrift Hotel, Zimmernummer, etc."></textarea>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Escort Outfit</label>
+                        <label class="control-label">Escort Outfit *</label>
                         <div class="controls docs-input-sizes">
                           <select name="outfit" class="span4">
+                            <option>Model darf entscheiden.</option>
                             <option>Business (Hosenanzug, Blazer, Rock,…)</option>
                             <option>Elegant (Kleid, langer Rock)</option>
                             <option>Sexy (Minirock)</option>
@@ -230,7 +233,7 @@
                         </div>
                       </div>                      
                       <div class="control-group">
-                        <label class="control-label">Geplantes Abenteuer</label>
+                        <label class="control-label">Geplantes Date *</label>
                         <div class="controls docs-input-sizes">
                           <textarea name="adventure" class="input-xlarge" id="textarea" rows="3" placeholder="Wie stellen Sie sich Ihr Date vor?"></textarea>
                         </div>
@@ -243,20 +246,21 @@
                       </div>
                       
                       <div class="control-group">
-                        <label class="control-label">Vorname</label>
+                        <label class="control-label" for="first_name">Vorname *</label>
                         <div class="controls docs-input-sizes">
-                          <input name="first_name" type="text" class="span3" placeholder="">
+                          <input id="first_name" name="first_name" type="text" class="span3" placeholder=""  minlength="1">
                         </div>
                       </div>
+                      
                       <div class="control-group">
-                        <label class="control-label">Nachname</label>
+                        <label class="control-label">Nachname *</label>
                         <div class="controls docs-input-sizes">
                           <input name="last_name" type="text" class="span3" placeholder="">
                         </div>
                       </div>
 
                       <div class="control-group">
-                        <label class="control-label">Kontaktaufnahme per</label>
+                        <label class="control-label">Kontakt per *</label>
                         <div class="controls docs-input-sizes">
                           <select name="contact_by" class="span4">
                             <option>E-Mail</option>
@@ -265,14 +269,14 @@
                         </div>
                       </div>                      
                       <div class="control-group">
-                        <label class="control-label">E-Mail</label>
+                        <label class="control-label">E-Mail *</label>
                         <div class="controls docs-input-sizes">
                           <input name="email" type="text" class="span3" placeholder="">
                         </div>
                       </div>
                       
                       <div class="control-group">
-                        <label class="control-label">Telefon / Mobil</label>
+                        <label class="control-label">Telefon / Mobil *</label>
                         <div class="controls">
                           <input name="phone" type="text" class="span4" placeholder=""> 
                         </div>
@@ -312,7 +316,7 @@
                           
                             <div class="controls">
                               <label class="checkbox">
-                                <input name="terms" type="checkbox" name="optionsCheckboxList1" value="option1">gelesen und akzeptiert.
+                                <input name="terms" type="checkbox" name="optionsCheckboxList1" value="option1">gelesen und akzeptiert. *
                               </label>
                             </div>
                           </div>
@@ -352,12 +356,65 @@
     <script src="../assets/js/bootstrap-typeahead.js"></script>
     <script src="../assets/js/bootstrap-datepicker.js"></script>
     <script src="../assets/js/jquery.lightbox-0.5.js"></script>
+    <script src="../assets/js/jquery.validate.js"></script>
     
     <script type="text/javascript">
     $(function() {
     	$('a.lightbox1').lightBox(); // Select all links with lightbox class
     });
     </script>
+
+
+    <script type="text/javascript">
+    		SubmittingForm=function() {
+    			alert("The form has been validated.");
+    		}
+
+    		$(document).ready(function() {
+          $("#booking").validate({
+            submitHandler:function(form) {
+              SubmittingForm();
+            },
+            rules: {
+              first_name: "required",
+              last_name: "required",
+              date: "required",
+              location: "required",
+    					email: {
+    						required: true,
+    						email: true
+    					},
+              phone: "required",
+              terms: "required"
+            }
+    			});
+    		});
+
+    		jQuery.validator.addMethod(
+    			"selectNone",
+    			function(value, element) {
+    				if (element.value == "none")
+    				{
+    					return false;
+    				}
+    				else return true;
+    			},
+    			"Please select an option."
+    		);
+
+    		$(document).ready(function() {
+    			$("#fvujq-form2").validate({
+    				submitHandler:function(form) {
+    					SubmittingForm();
+    				},
+    				rules: {
+    					sport: {
+    						selectNone: true
+    					}
+    				}
+    			});
+    		});
+    	</script>
 
 
   </body>

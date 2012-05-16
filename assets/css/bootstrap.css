@@ -805,7 +805,7 @@ input[class*="span"],
 select[class*="span"],
 textarea[class*="span"],
 .uneditable-input {
-  float: none;
+  /*float: none;*/
   margin-left: 0;
 }
 input,
@@ -4011,3 +4011,13 @@ a.thumbnail:hover {
 .invisible {
   visibility: hidden;
 }
+
+
+.error {
+  display: block;
+  float: left;
+  color: #CC00CC;
+  margin-left: 10px;
+  /*padding-top: 5px;*/
+}
+
