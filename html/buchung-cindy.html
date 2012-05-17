@@ -128,7 +128,7 @@
         </div>
 
         <div class="span9">
-          <form class="form-horizontal booking" id="booking" name="booking" action="" method="post">
+          <form class="form-horizontal booking" id="booking" name="booking" action="http://purpurbooking.pagodabox.com/booking.php" method="post">
             <input type="hidden" value="formtype" name="Buchungsanfrage" />
           
             <fieldset>
@@ -307,7 +307,7 @@
                         <label class="control-label" for="optionsCheckboxList">Newsletter</label>
                           <div class="controls">
                             <label class="checkbox">
-                              <input name="newsletter" type="checkbox" name="optionsCheckboxList1" value="option1">bestellen. Kündigungslink in jeder E-Mail.
+                              <input name="newsletter" type="checkbox" name="optionsCheckboxList1"  value="Ja">bestellen. Kündigungslink in jeder E-Mail.
                             </label>
                           </div>
                         </div>
@@ -316,7 +316,7 @@
                           
                             <div class="controls">
                               <label class="checkbox">
-                                <input name="terms" type="checkbox" name="optionsCheckboxList1" value="option1">gelesen und akzeptiert. *
+                                <input name="terms" type="checkbox" name="optionsCheckboxList1" value="Ja">gelesen und akzeptiert. *
                               </label>
                             </div>
                           </div>
@@ -366,9 +366,6 @@
 
 
     <script type="text/javascript">
-    		SubmittingForm=function() {
-    			alert("The form has been validated.");
-    		}
 
     		$(document).ready(function() {
           $("#booking").validate({
@@ -379,6 +376,7 @@
               first_name: "required",
               last_name: "required",
               date: "required",
+              adventure: "required",
               location: "required",
     					email: {
     						required: true,
