@@ -125,24 +125,29 @@
             </div>
           </div>
         </div>
+        
         <div class="span9">
-          <form class="form-horizontal booking" id="booking" name="booking" action="http://purpurbooking.pagodabox.com/booking.php" method="post">
-            <input type="hidden" value="formtype" name="Buchungsanfrage" />
-          
+          <form class="form-horizontal" name="jump">
             <fieldset>
                       <legend>Buchung</legend>
                       <div class="control-group">
                         <label class="control-label">Model *</label>
                         <div class="controls docs-input-sizes">
-                          
-                          <select name="myjumpbox" OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value" class="span4">
+                          <select name="model" OnChange="location.href=jump.model.options[selectedIndex].value" class="span4">
                              <option value="buchung.html">–</option>
                              <option value="buchung-cindy.html">Cindy</option>
                              <option selected>Valerie</option>
                           </select>
-                          
                         </div>
                       </div>
+                      </fieldset>
+                      </form>
+          <form class="form-horizontal booking" id="booking" name="booking" action="http://purpurbooking.pagodabox.com/booking.php" method="post">
+            <input type="hidden" value="Buchungsanfrage" name="formtype" />
+            <input type="hidden" value="Valerie" name="model">
+          
+          
+            <fieldset>
                       <div class="control-group">
                         <label class="control-label">Buchungsdauer *</label>
                         <div class="controls docs-input-sizes">
@@ -219,7 +224,7 @@
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Escort Outfit *</label>
+                        <label class="control-label">Escort Outfit</label>
                         <div class="controls docs-input-sizes">
                           <select name="outfit" class="span4">
                             <option>Model darf entscheiden.</option>
@@ -234,13 +239,13 @@
                       <div class="control-group">
                         <label class="control-label">Geplantes Date *</label>
                         <div class="controls docs-input-sizes">
-                          <textarea name="adventure" class="input-xlarge" id="textarea" rows="3" placeholder="Wie stellen Sie sich Ihr Date vor?"></textarea>
+                          <textarea name="adventure" class="input-xlarge" rows="3" placeholder="Wie stellen Sie sich Ihr Abenteuer vor?"></textarea>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Erotische Vorlieben</label>
                         <div class="controls docs-input-sizes">
-                          <textarea name="preferences" class="input-xlarge" id="textarea" rows="3" placeholder="Welche Vorlieben möchten Sie gerne ausleben?"></textarea>
+                          <textarea name="preferences" class="input-xlarge" rows="3" placeholder="Welche Vorlieben möchten Sie gerne ausleben?"></textarea>
                         </div>
                       </div>
                       
@@ -384,31 +389,6 @@
               phone: "required",
               terms: "required"
             }
-    			});
-    		});
-
-    		jQuery.validator.addMethod(
-    			"selectNone",
-    			function(value, element) {
-    				if (element.value == "none")
-    				{
-    					return false;
-    				}
-    				else return true;
-    			},
-    			"Please select an option."
-    		);
-
-    		$(document).ready(function() {
-    			$("#fvujq-form2").validate({
-    				submitHandler:function(form) {
-    					SubmittingForm();
-    				},
-    				rules: {
-    					sport: {
-    						selectNone: true
-    					}
-    				}
     			});
     		});
     	</script>
