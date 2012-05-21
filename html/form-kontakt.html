@@ -118,26 +118,26 @@
           </div>
         </div>
         <div class="span8">
-          <form class="form-horizontal">
+          <form class="form-horizontal contact" id="contact" name="contact" action="http://purpurbooking.pagodabox.com/contact.php" method="post">
           
             <fieldset>
                       <legend>Kontakt</legend>
                       <div class="control-group">
-                        <label class="control-label">E-Mail</label>
+                        <label class="control-label">E-Mail *</label>
                         <div class="controls docs-input-sizes">
-                          <input type="text" class="span3" placeholder="">
+                          <input name="email" type="text" class="span3" placeholder="">
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">Betreff</label>
                         <div class="controls docs-input-sizes">
-                          <input type="text" class="span3" placeholder="">
+                          <input name="subject" type="text" class="span3" placeholder="">
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Nachricht</label>
+                        <label class="control-label">Nachricht *</label>
                         <div class="controls docs-input-sizes">
-                          <textarea class="input-xlarge" id="textarea" rows="5" placeholder="Ihre Nachricht an uns."></textarea>
+                          <textarea name="message" class="input-xlarge" rows="5" placeholder="Ihre Nachricht an uns."></textarea>
                         </div>
                       </div>
                           <div class="form-actions">
@@ -178,6 +178,26 @@
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
     <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script src="../assets/js/jquery.validate.js"></script>
 
+
+    <script type="text/javascript">
+
+    		$(document).ready(function() {
+          $("#contact").validate({
+            submitHandler:function(form) {
+              SubmittingForm();
+            },
+            rules: {
+    					email: {
+    						required: true,
+    						email: true
+    					},
+              message: "required"
+            }
+    			});
+    		});
+
+    	</script>
   </body>
 </html>
