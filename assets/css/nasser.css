@@ -261,6 +261,7 @@ img.opacity:hover {
 	}
 	
 	
-  }
-
+.textbox {
+  min-height: 342px;
+}
 

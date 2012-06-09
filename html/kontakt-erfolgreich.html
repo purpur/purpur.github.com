@@ -140,7 +140,6 @@
     <script src="../assets/js/bootstrap-typeahead.js"></script>
     <script src="../assets/js/bootstrap-datepicker.js"></script>
     <script src="../assets/js/jquery.lightbox-0.5.js"></script>
-    <script src="../assets/js/jquery.validate.js"></script>
     
     
     <script type="text/javascript">
@@ -149,29 +148,7 @@
     });
     </script>
 
-    <script type="text/javascript">
-
-    		$(document).ready(function() {
-          $("#booking").validate({
-            submitHandler:function(form) {
-              SubmittingForm();
-            },
-            rules: {
-              first_name: "required",
-              last_name: "required",
-              date: "required",
-              adventure: "required",
-              location: "required",
-    					email: {
-    						required: true,
-    						email: true
-    					},
-              phone: "required",
-              terms: "required"
-            }
-    			});
-    		});
-    	</script>
+   
 
   </body>
 </html>
