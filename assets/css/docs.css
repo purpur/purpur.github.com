@@ -12,8 +12,9 @@ body {
   position: relative;
   padding-top: 0px;
   background-color: #fefefe;
-  background-repeat: repeat;
-  background-position: 0 40px;
+  background-repeat: repeat;  
+  background-image:url('../img/muster_pattern_smaller.jpg');
+  background-position:center top; 
 }
 
 
@@ -45,7 +46,6 @@ section {
   padding-left: 0px;
   padding-right: 0px;
   
-
   
 }
 

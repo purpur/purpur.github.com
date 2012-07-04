@@ -33,6 +33,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  
 }
 a:focus {
   outline: thin dotted #333;
@@ -136,7 +137,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #808080;  
+  background-color: #808080;
 }
 a {
   color: #0088cc;
@@ -147,6 +148,7 @@ a:hover {
   text-decoration: underline;
 }
 .row {
+  
   margin-left: -20px;
   *zoom: 1;
 }
@@ -309,6 +311,7 @@ a:hover {
   width: 6.382978723%;
 }
 .container {
+  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
