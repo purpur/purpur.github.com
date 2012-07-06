@@ -178,7 +178,7 @@
                       <div class="control-group">
                         <label class="control-label">Buchungsdatum *</label>
                         <div class="controls">
-                          <input name="date" data-datepicker="datepicker" class="small" type="text" value="" />
+                          <input name="date" data-datepicker="datepicker" class="small" type="date" value="" />
 
                         </div>
                       </div>
@@ -384,7 +384,10 @@
             rules: {
               first_name: "required",
               last_name: "required",
-              date: "required",
+              date: {
+               required: true,
+               date: true
+              },
               adventure: "required",
               location: "required",
     					email: {
