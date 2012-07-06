@@ -375,32 +375,26 @@
 
 
     <script type="text/javascript">
-
-    		$(document).ready(function() {
-          $("#booking").validate({
-            submitHandler:function(form) {
-              SubmittingForm();
+      $(document).ready(function() {
+        $("#booking").validate({
+          submitHandler:function(form) {
+            $(form).submit();
+          },
+          rules: {
+            first_name: "required",
+            last_name: "required",
+            adventure: "required",
+            location: "required",
+            email: {
+              required: true,
+              email: true
             },
-            rules: {
-              first_name: "required",
-              last_name: "required",
-              date: {
-               required: true,
-               date: true
-              },
-              adventure: "required",
-              location: "required",
-    					email: {
-    						required: true,
-    						email: true
-    					},
-              phone: "required",
-              terms: "required"
-            }
-    			});
-    		});
-
-    	</script>
+            phone: "required",
+            terms: "required"
+          }
+        });
+      });
+    </script>
 
 
   </body>
