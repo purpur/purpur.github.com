@@ -111,17 +111,15 @@
 
       <div class="row">
 
-        <div class="span3">
+        <div class="span3" id="modelbox">
           <div class="thumbnail">
-            <a href="../assets/img/models/Cindy1.jpg" class="lightbox1"><img src="../assets/img/models/cindy_4x6_profil.jpg" alt="" /></a> 
+            <a href="../assets/img/models/Cindy2.jpg" class="lightbox1"><img src="../assets/img/models/cindy_4x6_profil.jpg" alt="" /></a> 
             <a class="lightbox1" href="../assets/img/models/Cindy2.jpg" title=""></a>
             <a class="lightbox1" href="../assets/img/models/Cindy3.jpg" title=""></a>
             <a class="lightbox1" href="../assets/img/models/Cindy4.jpg" title=""></a>
-
-            
             <div class="caption">
               <p>
-                <a href="cindy.html" class="btn btn-primary button_breit">Zur Sedcard</a> 
+                <a href="cindy.html" class="btn btn-primary button_breit">Start</a> 
               </p>
             </div>
           </div>
@@ -136,9 +134,9 @@
                         <label class="control-label">Model *</label>
                         <div class="controls docs-input-sizes">
                           
-                          <select id="model" name="model" OnChange="location.href=jump.model.options[selectedIndex].value" class="span4">
+                          <select id="model" name="model" class="span4">
                              <option value="buchung.html">–</option>
-                             <option selected>Cindy</option>
+                             <option value="_cindy.html" selected>Cindy</option>
                              <option value="buchung-valerie.html">Valerie</option>
                           </select>
                         </div>
@@ -394,6 +392,15 @@
           }
         });
       });
+    </script>
+
+    <script>
+      $("#model").change(function () {
+        $("select option:selected").each(function () {
+          $("#modelbox").load($(this).val());
+        });
+      })
+      .trigger('change');
     </script>
 
 
