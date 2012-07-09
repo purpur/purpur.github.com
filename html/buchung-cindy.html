@@ -403,6 +403,8 @@
       $("#model").change(function () {
         $("select option:selected").each(function () {
           $("#modelbox").load($(this).val());
+          $('a.lightbox1').lightBox(); // Select all links with lightbox class
+          
         });
       })
       .trigger('change');
