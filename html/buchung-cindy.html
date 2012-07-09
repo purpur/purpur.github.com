@@ -176,7 +176,7 @@
                       <div class="control-group">
                         <label class="control-label">Buchungsdatum *</label>
                         <div class="controls">
-                          <input name="date" data-datepicker="datepicker" class="small" value="" />
+                          <input name="date" id="datepicker" class="small" value="" />
 
                         </div>
                       </div>
@@ -368,6 +368,10 @@
     <script type="text/javascript">
     $(function() {
     	$('a.lightbox1').lightBox(); // Select all links with lightbox class
+    });
+    
+    $('#datepicker').datepicker({
+        format: 'mm-dd-yyyy'
     });
     </script>
 
