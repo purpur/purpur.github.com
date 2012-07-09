@@ -113,7 +113,7 @@
 
         <div class="span3" id="modelbox">
           <div class="thumbnail">
-            <a href="../assets/img/models/Cindy2.jpg" class="lightbox1"><img src="../assets/img/models/cindy_4x6_profil.jpg" alt="" /></a> 
+            <a href="../assets/img/models/Cindy2.jpg" class="lightbox1" id="lightbox1"><img src="../assets/img/models/cindy_4x6_profil.jpg" alt="" /></a> 
             <a class="lightbox1" href="../assets/img/models/Cindy2.jpg" title=""></a>
             <a class="lightbox1" href="../assets/img/models/Cindy3.jpg" title=""></a>
             <a class="lightbox1" href="../assets/img/models/Cindy4.jpg" title=""></a>
@@ -403,8 +403,7 @@
       $("#model").change(function () {
         $("select option:selected").each(function () {
           $("#modelbox").load($(this).val());
-          $('a.lightbox1').lightBox(); // Select all links with lightbox class
-          
+          $("#lightbox1").lightBox(); // Select all links with lightbox class
         });
       })
       .trigger('change');
