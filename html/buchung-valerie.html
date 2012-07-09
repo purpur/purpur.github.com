@@ -110,7 +110,7 @@
       <div class="row">
       
         
-        <div class="span3">
+        <div class="span3" id="modelbox">
           <div class="thumbnail">
             <a href="../assets/img/models/Agnes1.jpg" class="lightbox1"><img src="../assets/img/models/valerie_4x6_profil.jpg" alt="" /></a> 
             <a class="lightbox1" href="../assets/img/models/Agnes2.jpg" title=""></a>
@@ -128,19 +128,20 @@
         
         <div class="span9">
           <form class="form-horizontal" name="jump">
-            <fieldset>
-                      <legend>Buchung</legend>
-                      <div class="control-group">
-                        <label class="control-label">Model *</label>
-                        <div class="controls docs-input-sizes">
-                          <select name="model" OnChange="location.href=jump.model.options[selectedIndex].value" class="span4">
-                             <option value="buchung.html">–</option>
-                             <option value="buchung-cindy.html">Cindy</option>
-                             <option selected>Valerie</option>
-                          </select>
+             <fieldset>
+                        <legend>Buchung</legend>
+                        <div class="control-group">
+                          <label class="control-label">Model *</label>
+                          <div class="controls docs-input-sizes">
+
+                            <select id="model" name="model" class="span4">
+                               <option value="_buchung.html">–</option>
+                               <option value="_cindy.html">Cindy</option>
+                               <option value="_valerie.html" selected>Valerie</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
-                      </fieldset>
+                        </fieldset>
                       </form>
           <form class="form-horizontal booking" id="booking" name="booking" action="http://purpurmail.phpfogapp.com/booking.php" method="post">
             <input type="hidden" value="Buchungsanfrage" name="formtype" />
@@ -395,6 +396,14 @@
       });
     </script>
 
+    <script>
+      $("#model").change(function () {
+        $("select option:selected").each(function () {
+          $("#modelbox").load($(this).val());
+        });
+      })
+      .trigger('change');
+    </script>
 
   </body>
 </html>
