@@ -112,12 +112,7 @@
         
         <div class="span3" id="modelbox">
           <div class="thumbnail">
-            <a href="../assets/img/models/Agnes1.jpg" class="lightbox1" id="lightbox1"><img src="../assets/img/models/valerie_4x6_profil.jpg" alt="" /></a> 
-            <a class="lightbox1" href="../assets/img/models/Agnes2.jpg" title=""></a>
-            <a class="lightbox1" href="../assets/img/models/Agnes3.jpg" title=""></a>
-            <a class="lightbox1" href="../assets/img/models/Agnes4.jpg" title=""></a>
-            <a class="lightbox1" href="../assets/img/models/Agnes5.jpg" title=""></a>
-            
+            <img src="../assets/img/models/valerie_4x6_profil.jpg" alt="" />
             <div class="caption">
               <p>
                 <a href="valerie.html" class="btn btn-primary button_breit">Zur Sedcard</a> 
@@ -365,10 +360,6 @@
     
     
     <script type="text/javascript">
-    $(function() {
-    	$('a.lightbox1').lightBox(); // Select all links with lightbox class
-    });
-    
     $('#datepicker').datepicker({
       format: 'mm-dd-yyyy',
       weekStart: 1
@@ -401,7 +392,6 @@
       $("#model").change(function () {
         $("select option:selected").each(function () {
           $("#modelbox").load($(this).val());
-          $("#lightbox1").lightBox(); // Select all links with lightbox class
         });
       })
       .trigger('change');
