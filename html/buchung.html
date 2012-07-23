@@ -392,7 +392,15 @@
         });
       })
       .trigger('change');
+
+      var hideKeyboard = function() {
+          document.activeElement.blur();
+          $("datepicker").blur();
+      };
+
     </script>
+
+
 
 
   </body>
