@@ -411,3 +411,12 @@ img.opacity:hover {
 	float:left;
 	padding:5px 3px 0px 3px;
 }
+
+.big_article_img {
+   width: 610px;
+   margin-bottom: 15px;
+}
+
+.article_thumb {
+  width: 130px;
+}
